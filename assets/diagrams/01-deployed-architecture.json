@@ -1,0 +1,303 @@
+{
+  "type": "shapes",
+  "output": {
+    "dpi": 210,
+    "theme": {
+      "bgcolor": "white",
+      "color": "#16324F",
+      "font": "Segoe UI,Arial",
+      "fontsize": 15
+    }
+  },
+  "items": [
+    {
+      "kind": "text",
+      "xy": [
+        10,
+        8.9
+      ],
+      "text": "DEPLOYED ARCHITECTURE | synthetic data only",
+      "fontsize": 22,
+      "color": "#16324F",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.1,
+        2.2
+      ],
+      "w": 19.8,
+      "h": 5.9,
+      "fill": "#F7FAFC",
+      "color": "#B8C9D7",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "ls": "--"
+    },
+    {
+      "kind": "text",
+      "xy": [
+        10,
+        7.7
+      ],
+      "text": "External Fabric tenant - one private workspace - existing F4 capacity",
+      "fontsize": 14,
+      "color": "#66758A",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.7,
+        5.1
+      ],
+      "w": 4.1,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "FleetAlphaSource\n5 vessels x 20 tags\n2,500 source readings",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        5.9,
+        5.1
+      ],
+      "w": 3.7,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "02_Publish\nAllowlist filter\nFull Delta snapshot",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        10.7,
+        5.1
+      ],
+      "w": 4.1,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "AnalyticsBetaExport\n4 vessels x 15 tags\n1,500 approved readings",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        15.7,
+        5.1
+      ],
+      "w": 3.5,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Read-only\nSQL analytics\nendpoint",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          4.8,
+          5.93
+        ],
+        [
+          5.9,
+          5.93
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          9.6,
+          5.93
+        ],
+        [
+          10.7,
+          5.93
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          14.8,
+          5.93
+        ],
+        [
+          15.7,
+          5.93
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        15.7,
+        2.8
+      ],
+      "w": 3.5,
+      "h": 1.55,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Native GraphQL API\nQueries only\nEntra authentication",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          17.45,
+          5.1
+        ],
+        [
+          17.45,
+          4.35
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        9.6,
+        2.8
+      ],
+      "w": 4.6,
+      "h": 1.55,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "04_Consumer_API_Connector\nHTTPS + pagination\nNotebook execution identity",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          15.7,
+          3.58
+        ],
+        [
+          14.2,
+          3.58
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        3.6,
+        2.8
+      ],
+      "w": 4.7,
+      "h": 1.55,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "AnalyticsBetaLanding\nreceived_measurements\nconsumer_checkpoint",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          9.6,
+          3.58
+        ],
+        [
+          8.3,
+          3.58
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        10.7,
+        0
+      ],
+      "w": 8.5,
+      "h": 1.5,
+      "fill": "#F3F0FC",
+      "color": "#7561A8",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Windows consumer.py -> SQLite\nSeparate certificate-authenticated application\nNo source permissions / no workspace role",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          17.45,
+          2.8
+        ],
+        [
+          17.45,
+          1.5
+        ]
+      ],
+      "color": "#7561A8",
+      "lw": 1.8
+    },
+    {
+      "kind": "text",
+      "xy": [
+        4.6,
+        0.75
+      ],
+      "text": "Arrows show data movement.\nConsumers initiate the HTTPS requests.",
+      "fontsize": 14,
+      "color": "#66758A",
+      "align": [
+        "center",
+        "center"
+      ]
+    }
+  ]
+}

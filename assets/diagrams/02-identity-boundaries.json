@@ -1,0 +1,214 @@
+{
+  "type": "shapes",
+  "output": {
+    "dpi": 210,
+    "theme": {
+      "bgcolor": "white",
+      "color": "#16324F",
+      "font": "Segoe UI,Arial",
+      "fontsize": 15
+    }
+  },
+  "items": [
+    {
+      "kind": "text",
+      "xy": [
+        9.3,
+        8.9
+      ],
+      "text": "IDENTITY AND DATA ACCESS | two distinct consumers",
+      "fontsize": 21,
+      "color": "#16324F",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.2,
+        5.6
+      ],
+      "w": 5.2,
+      "h": 1.8,
+      "fill": "#F3F0FC",
+      "color": "#7561A8",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Windows user certificate store\nNon-exportable private key\nSigns an OAuth client assertion",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        6.6,
+        5.6
+      ],
+      "w": 5,
+      "h": 1.8,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Microsoft Entra ID\nAnalytics Beta application\nIssues app-only access token",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        13,
+        5.6
+      ],
+      "w": 5.3,
+      "h": 1.8,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Fabric GraphQL API\nValidates token + Execute\nNo Mutation schema",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          5.4,
+          6.5
+        ],
+        [
+          6.6,
+          6.5
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          11.6,
+          6.5
+        ],
+        [
+          13,
+          6.5
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        13,
+        2.8
+      ],
+      "w": 5.3,
+      "h": 1.8,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Export SQL endpoint\nConsumer ReadData\nSSO caller identity",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          15.65,
+          5.6
+        ],
+        [
+          15.65,
+          4.6
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        6.6,
+        2.8
+      ],
+      "w": 5,
+      "h": 1.8,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Approved dataset only\nALPHA-001..004\nT01..T15",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          13,
+          3.7
+        ],
+        [
+          11.6,
+          3.7
+        ]
+      ],
+      "color": "#087F8C",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.2,
+        2.8
+      ],
+      "w": 5.2,
+      "h": 1.8,
+      "fill": "#FFF2ED",
+      "color": "#B55236",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Provider source\nNo consumer permission\nNo workspace role",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "text",
+      "xy": [
+        2.8,
+        2.15
+      ],
+      "text": "NOT a filter supplied by the caller",
+      "fontsize": 12,
+      "color": "#B55236",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.2,
+        0
+      ],
+      "w": 18.1,
+      "h": 1.4,
+      "fill": "#F7FAFC",
+      "color": "#66758A",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Cloud notebook is a different identity path: notebook execution identity -> same GraphQL API.\nIt demonstrates API retrieval; it does not prove service-principal isolation by itself.\nAll lab artifacts share one workspace. Separate provider/consumer workspaces are a production design choice.",
+      "fontsize": 14,
+      "min_fontsize": 10
+    }
+  ]
+}

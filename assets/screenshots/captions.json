@@ -1,0 +1,15 @@
+{
+  "capture_date": "2026-10-21",
+  "synthetic_only": true,
+  "recorded_reference_demo": true,
+  "publication_state": "After one intentional change simulation: 1500 approved readings.",
+  "processing": "Cropped from reference screenshots; PNG metadata stripped by re-encoding. No account headers, administrator email, owner details or resource/run identifiers included.",
+  "screenshots": [
+    {"file": "01-project-items.png", "caption": "Reference notebooks, Lakehouses, GraphQL API and pipeline; owner columns excluded."},
+    {"file": "02-pipeline-canvas.png", "caption": "On-demand publication, SQL synchronization wait and API collection."},
+    {"file": "03-pipeline-success.png", "caption": "Recorded successful activity outcomes; run identifiers and operator details excluded."},
+    {"file": "04-api-query-results.png", "caption": "Approved synthetic measurements and publication metadata through GraphQL."},
+    {"file": "05-consumer-api-access.png", "caption": "Dedicated fictitious consumer application API Read/Execute row only."},
+    {"file": "06-landing-measurements.png", "caption": "Persisted synthetic measurements; UI preview limit is not a total-row count."}
+  ]
+}

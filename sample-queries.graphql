@@ -1,0 +1,27 @@
+query Publication {
+  publication_statuses(first: 2) {
+    items {
+      dataset_id provider consumer published_at_utc upper_modified_at_utc
+      row_count vessel_count tag_count
+    }
+    hasNextPage
+  }
+}
+
+query Readings($after: String, $filter: measurementsFilterInput) {
+  measurements(first: 200, after: $after, filter: $filter, orderBy: {reading_id: ASC}) {
+    items {
+      reading_id provider vessel_id tag_id tag_name measured_at_utc
+      value unit quality modified_at_utc revision
+    }
+    hasNextPage
+    endCursor
+  }
+}
+
+query VerifyReadOnly {
+  __schema {
+    queryType { fields { name } }
+    mutationType { fields { name } }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tenant_id": "YOUR-TENANT-GUID",
+  "capacity_id": "YOUR-EXISTING-ACTIVE-CAPACITY-GUID",
+  "workspace_name": "Vessel Signals Lab Public",
+  "graphql_api_name": "AnalyticsBetaTelemetryAPI",
+  "timeout_seconds": 1800,
+  "poll_seconds": 15
+}

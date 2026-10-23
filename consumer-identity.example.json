@@ -1,0 +1,5 @@
+{
+  "tenant_id": "YOUR-TENANT-GUID",
+  "client_id": "YOUR-DEDICATED-CONSUMER-APP-GUID",
+  "certificate_thumbprint": "YOUR-CURRENTUSER-CERTIFICATE-THUMBPRINT"
+}

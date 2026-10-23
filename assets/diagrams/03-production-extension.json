@@ -1,0 +1,258 @@
+{
+  "type": "shapes",
+  "output": {
+    "dpi": 210,
+    "theme": {
+      "bgcolor": "white",
+      "color": "#16324F",
+      "font": "Segoe UI,Arial",
+      "fontsize": 15
+    }
+  },
+  "items": [
+    {
+      "kind": "text",
+      "xy": [
+        10,
+        8.8
+      ],
+      "text": "PRODUCTION EXTENSION | not deployed in this lab",
+      "fontsize": 21,
+      "color": "#16324F",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.1,
+        5.6
+      ],
+      "w": 4.2,
+      "h": 1.65,
+      "fill": "#F7FAFC",
+      "color": "#66758A",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Existing SQL Server\nShore-side measurements\nReliable change tracking",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        5.4,
+        5.6
+      ],
+      "w": 4,
+      "h": 1.65,
+      "fill": "#F7FAFC",
+      "color": "#66758A",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Gateway + pipeline\nIndexed incremental read\nLate data + corrections",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        10.5,
+        5.6
+      ],
+      "w": 4,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Curated publication\nVersioned/immutable batch\nExplicit completion marker",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        15.6,
+        5.6
+      ],
+      "w": 4.1,
+      "h": 1.65,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Fabric GraphQL\nRead-only endpoint\nScoped partner identity",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          4.3,
+          6.43
+        ],
+        [
+          5.4,
+          6.43
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          9.4,
+          6.43
+        ],
+        [
+          10.5,
+          6.43
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          14.5,
+          6.43
+        ],
+        [
+          15.6,
+          6.43
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        15.6,
+        2.7
+      ],
+      "w": 4.1,
+      "h": 1.7,
+      "fill": "#FFF6E5",
+      "color": "#B57B1B",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "API Management\nPartner JWT validation\nLimits / logs / versions",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          17.65,
+          5.6
+        ],
+        [
+          17.65,
+          4.4
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        8.9,
+        2.7
+      ],
+      "w": 5.3,
+      "h": 1.7,
+      "fill": "#EAF4F5",
+      "color": "#087F8C",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Partner integration job\nPull + retry + deduplicate\nStore data and checkpoint",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          15.6,
+          3.55
+        ],
+        [
+          14.2,
+          3.55
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [
+        0.1,
+        2.7
+      ],
+      "w": 7.2,
+      "h": 1.7,
+      "fill": "#F3F0FC",
+      "color": "#7561A8",
+      "lw": 1.8,
+      "cornerradius": 0,
+      "label": "Partner-owned database or lake\nRecipient chooses its own platform\nNo Fabric licence needed just to call HTTPS",
+      "fontsize": 15,
+      "min_fontsize": 10
+    },
+    {
+      "kind": "arrow",
+      "points": [
+        [
+          8.9,
+          3.55
+        ],
+        [
+          7.3,
+          3.55
+        ]
+      ],
+      "color": "#66758A",
+      "lw": 1.8
+    },
+    {
+      "kind": "text",
+      "xy": [
+        10,
+        1.25
+      ],
+      "text": "Partner -> APIM token is validated before APIM exchanges to its managed-identity backend token.\nA shared backend identity does NOT automatically preserve per-partner row entitlements.",
+      "fontsize": 15,
+      "color": "#16324F",
+      "align": [
+        "center",
+        "center"
+      ]
+    },
+    {
+      "kind": "text",
+      "xy": [
+        10,
+        0.1
+      ],
+      "text": "Separate workspaces / stable publication batches / key rotation / monitoring / deletion policy / recovery runbooks",
+      "fontsize": 13,
+      "color": "#66758A",
+      "align": [
+        "center",
+        "center"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "tenant_id": "YOUR-TENANT-GUID",
+  "graphql_endpoint": "COPY-HTTPS-FABRIC-GRAPHQL-ENDPOINT-AFTER-ATTACH",
+  "authentication": "azure-cli"
+}
